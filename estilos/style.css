@@ -34,27 +34,34 @@
     width: 2%;
     font-size: 30px;
 }
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 20%;
+    height: auto;
+    padding-left: 35%;
+}
 .minmax{
+    flex: 1;
     font-size: 75%;
     padding-left: 530px;
     font-weight: normal;
     word-spacing: 8px;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1000px;
+    border: 1px solid green;
 }
 .temperatura{
-    padding-left: 530px;
+    flex: 2;
+    width: 5px;
+    flex-direction: wrap;
     font-weight: bold;
     word-spacing: 3px;
+    border: 1px solid green;
 }
 .capitalE{
-    padding-left: 530px;
+    flex: 3;
     font-weight: bold;
-    word-spacing: 3px;
+    word-spacing: 1px;
+    border: 1px solid green;
 }
 body{
     background: linear-gradient(#FF7F00, orange);
