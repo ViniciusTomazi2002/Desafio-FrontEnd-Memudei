@@ -3,28 +3,52 @@
 <head>
     <meta charset='utf-8'>
     <meta name=""viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Desafio FrontEnd</title>
 </head>
 <body>
     <main>
         <header>
-            <h1>Previsão do tempo</h1>
+            <div class="previsao">
+                <h1>Previsão do tempo</h1>
+            </div>
         </header>
-        <input type="search" name="Nome Cidade" id="procuraCidade">
-        <h2>Capitais</h2>
+        <form class="form-procura">
+            <div class="procura">
+                <input class="procura-cidade" nome="procura-cidade" type="search" maxlength="8" placeholder="Insira aqui o nome da cidade" autofocus/>
+                <button class="btn-procura" type="submit"></span>
+
+                </button>
+            </div>            
+        </form>
+
+
+        <div class="capitais">
+            <h2>Capitais</h2> 
+        </div>
+
         <article>
-            <h3>Min Max</h3>
-            <p>18° 27°</p>
-            <p>Rio de Janeiro</p>
-            <p>São Paulo</p>
-            <p>Belo Horizonte</p>
-            <p>Brasilia</p>
-            <p>Belém</p>
-            <p>Salvador</p>
-            <p>Curitiba</p>
-            <p>Fortaleza</p>
-            <p>Manaus</p>
-            <p>João Pessoa</p>
+            <div class="minmax">
+               <p>Min Max</p>                
+            </div>
+
+            <div class="temperatura">
+                <p>18° 27°</p>                
+            </div>
+            <div class="capitalD">
+                <p>Rio de Janeiro</p>
+                <p>São Paulo</p>
+                <p>Belo Horizonte</p>
+                <p>Brasilia</p>
+                <p>Belém</p>
+            </div>
+            <div class="capitalE">
+                <p>Salvador</p>
+                <p>Curitiba</p>
+                <p>Fortaleza</p>
+                <p>Manaus</p>
+                <p>João Pessoa</p>
+            </div>
         </article>
     </main>
 </body>
