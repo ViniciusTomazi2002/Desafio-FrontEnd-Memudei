@@ -40,7 +40,24 @@
     font-weight: normal;
     word-spacing: 8px;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1000px;
+}
+.col{
+    flex: 1;
+    padding-left: 530px;
+    border: 1px solid #eee;
+    text-align: center;
+}   
 .temperatura{
+    padding-left: 530px;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+.capitalE{
     padding-left: 530px;
     font-weight: bold;
     word-spacing: 3px;
