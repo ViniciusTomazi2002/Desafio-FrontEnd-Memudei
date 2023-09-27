@@ -36,35 +36,42 @@
 }
 .container{
     display: flex;
-    /* justify-content: space-between; */
-    width: 20%;
-    height: auto;
+    flex-direction: row;
     padding-left: 35%;
+    height: auto;
 }
 .minmax{
-    flex: 1;
     font-size: 75%;
-    padding-left: 530px;
+    padding-left: 35.5%;
     font-weight: normal;
     word-spacing: 8px;
-    border: 1px solid green;
 }
-.temperatura{
-    flex: 2;
-    width: 5px;
-    flex-direction: wrap;
+.temperaturaE{
+    width: auto;
+    padding-left: 1%;
     font-weight: bold;
     word-spacing: 3px;
-    border: 1px solid green;
 }
 .capitalE{
-    flex: 3;
+    width: auto;
+    padding-left: 1%;
     font-weight: bold;
     word-spacing: 1px;
-    border: 1px solid green;
+}
+.temperaturaD{
+    width: auto;
+    padding-left: 5%;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+.capitalD{
+    width: auto;
+    padding-left: 1%;
+    font-weight: bold;
+    word-spacing: 1px;
 }
 body{
-    background: linear-gradient(#FF7F00, orange);
+    background: linear-gradient(#FF7F00, rgb(255, 204, 0));
     background-attachment: fixed;
     background-repeat: no-repeat;
     
