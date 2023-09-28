@@ -1,5 +1,8 @@
 *{
     font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 .previsao{
     text-align: center;
@@ -13,36 +16,35 @@
     margin-right: 20%;
     color: white;
 }
-.form-procura{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 10px;
+.caixa-pesquisa{
+    background-color: #eee;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex; 
+    align-items: center;
+    justify-self: space-between;
+    padding: 0px 25px;
 }
-.procura-cidade{
-    border-radius: 2px 0 0 2px;
-    padding: 10px;
-    width: 33%;
-    font-size: 30px;
-    text-align: center;    
+input{
+  width: 240px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;  
 }
-.btn-procura{
-    border-radius: 0 2px 2px 0;
-    margin-left: -5px;
-    padding: 5px 0;
-    width: 2%;
-    font-size: 30px;
+.fa-solid:hover{
+    color: orangered;
+    cursor: pointer;
 }
 .container{
     display: flex;
     flex-direction: row;
-    padding-left: 35%;
     height: auto;
 }
 .minmax{
     font-size: 75%;
-    padding-left: 35.5%;
+    padding-left: 36%;
     font-weight: normal;
     word-spacing: 8px;
 }
@@ -51,6 +53,7 @@
     padding-left: 1%;
     font-weight: bold;
     word-spacing: 3px;
+
 }
 .capitalE{
     width: auto;
@@ -69,6 +72,14 @@
     padding-left: 1%;
     font-weight: bold;
     word-spacing: 1px;
+}
+.texto{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    position: center;
+    padding: 2rem 1rem;
 }
 body{
     background: linear-gradient(#FF7F00, rgb(255, 204, 0));
