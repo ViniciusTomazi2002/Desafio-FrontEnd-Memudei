@@ -16,27 +16,17 @@
     margin-right: 20%;
     color: white;
 }
-.caixa-pesquisa{
-    background-color: #eee;
-    width: 330px;
-    height: 50px;
-    border-radius: 50px;
-    display: flex; 
+.container-pesquisa{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-self: space-between;
-    padding: 0px 25px;
+    height: 10vh;
+    max-width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    border: 5px;
 }
-input{
-  width: 240px;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 18px;  
-}
-.fa-solid:hover{
-    color: orangered;
-    cursor: pointer;
-}
+
 .container{
     display: flex;
     flex-direction: row;
