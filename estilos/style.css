@@ -60,12 +60,48 @@ body{
         position: center;
         padding: 3rem 2rem;
     }  
+    .temperaturaE{
+        width: auto;
+        padding-left: 1%;
+        font-weight: bold;
+        word-spacing: 3px;
+        border: solid rosybrown;
+    }
+    .capitalE{
+        width: auto;
+        padding-left: 1%;
+        font-weight: bold;
+        word-spacing: 1px;
+        border: solid rosybrown;
+    }
+    .temperaturaD{
+        width: auto;
+        padding-left: 5%;
+        font-weight: bold;
+        word-spacing: 3px;
+        border: solid rosybrown;
+    }
+    .capitalD{
+        width: auto;
+        padding-left: 1%;
+        font-weight: bold;
+        word-spacing: 1px;
+        border: solid rosybrown;
+    }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .container{
         flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
         width: 100%;
+        border: solid green;
+    }
+    .previsao{
+        text-align: center;
+        font-size: 200%;
+        margin-top: 5%;
+        color: white;
     }
     .capitais{
         text-align: center;
@@ -99,7 +135,27 @@ body{
         text-transform: uppercase;
         position: center;
         padding: 2rem 1rem;
-    }       
+    }
+    .temperaturaE,.capitalE{
+        width: 100% ;
+        padding-left: 10%;
+        font-weight: bold;
+        word-spacing: 3px;
+        border: solid rosybrown;
+    }
+    .temperaturaD,.capitalD{
+        width: 100% ;
+        padding-left: 10%;
+        font-weight: bold;
+        word-spacing: 3px;
+        border: solid rosybrown;
+    }
+    .minmax{
+        font-size: 75%;
+        padding-left: 10%;
+        font-weight: normal;
+        word-spacing: 8px;
+    }    
 }
 
 .container-pesquisa .pesquisa{
@@ -157,35 +213,6 @@ body{
     padding-left: 36%;
     font-weight: normal;
     word-spacing: 8px;
-}
-.temperaturaE{
-    width: auto;
-    padding-left: 1%;
-    font-weight: bold;
-    word-spacing: 3px;
-    border: solid rosybrown;
-
-}
-.capitalE{
-    width: auto;
-    padding-left: 1%;
-    font-weight: bold;
-    word-spacing: 1px;
-    border: solid rosybrown;
-}
-.temperaturaD{
-    width: auto;
-    padding-left: 5%;
-    font-weight: bold;
-    word-spacing: 3px;
-    border: solid rosybrown;
-}
-.capitalD{
-    width: auto;
-    padding-left: 1%;
-    font-weight: bold;
-    word-spacing: 1px;
-    border: solid rosybrown;
 }
 main{
 }
