@@ -10,7 +10,7 @@ Uma pagina web de previsão do tempo, projeto proposto foi uma progamação feit
 HTML, CSS
 
 ## Instalação
-1. Clone este repositório:
+1. Clone este repositório: https://github.com/ViniciusTomazi2002/Vinicius-Tomazi/tree/d0e4b63433206ef36d6c19341031c376cd922fdc
 
 
 
