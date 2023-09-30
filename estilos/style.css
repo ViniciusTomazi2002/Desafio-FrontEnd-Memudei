@@ -1,0 +1,279 @@
+*{
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#FF7F00, rgb(255, 204, 0));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        width: auto;
+        margin: 0 auto;
+        flex-direction: row;
+        height: auto;
+    }    
+    .espaco{
+        width: 98px;
+        padding-left: 1%;
+        font-weight: bold;
+        word-spacing: 1px;
+    }
+    .previsao{
+        text-align: center;
+        font-size: 200%;
+        margin-top: 5%;
+        color: white;
+    }
+    .linha{
+        display: flex;
+        align-items: center;
+        max-width: 575px;
+        height: 1px;
+        margin: auto;
+        background: #fff;
+    }
+    .capitais{
+        padding-left: 36%;
+        font-size: 180%;
+        margin-right: 30px;
+        color: white;
+    }
+    .container-pesquisa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        margin: 50px auto;
+        background: #fff;
+        border: 5px;
+    }
+    .pesquisa input{
+        height: 55px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0 60px 0 20px;
+        font-size: 18px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.12);
+    }  
+    .texto{
+        color: white;
+        font-size: 6rem;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        position: center;
+        padding: 3rem 2rem;
+    }  
+    .capitalE,.capitalD{
+        width: auto;
+        padding-left: 1%;
+        font-weight: bold;
+        word-spacing: 1px;
+    }
+    .container-pesquisa .pesquisa{
+        background: #fff;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    }
+
+    .pesquisa.active input{
+        border-radius: 5px 5px 0 0;
+    }
+    .pesquisa .list{
+        padding: 0;
+        opacity: 0;
+        pointer-events: none;
+        max-height: 280px;
+        overflow-y: auto;
+    }
+    .pesquisa.active .list{
+        padding: 10px 8px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .list li{
+        list-style: none;
+        padding: 8px 12px;
+        display: none;
+        width: 100%;
+        cursor: default;
+        border-radius: 3px;
+    }
+    .pesquisa.active .list li{
+        display: block;
+    }
+    .list li:hover{
+        background: #efefef;
+    }
+    .pesquisa .icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        line-height: 55px;
+        font-size: 20px;
+        color: #644bff;
+        cursor: pointer;
+    }
+    .container-minmax{
+        display: flex;
+        width: auto;
+    }
+    .minmax{
+        width: auto;
+        font-size: 75%;
+        padding-right: 5%;
+        word-spacing: 5px;
+    }
+    .minmaxEspaco{
+        width: 175px;
+        font-weight: bold;
+    }
+    .minmax2{
+        font-size: 75%;
+        font-weight: normal;
+        padding-right: 5%;
+        word-spacing: 5px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+    }
+    .previsao{
+        text-align: center;
+        font-size: 200%;
+        margin-top: 5%;
+        color: white;
+    }
+    .linha{
+        display: flex;
+        align-items: center;
+        max-width: auto;
+        height: 1px;
+        margin: auto;
+        background: #fff;
+    }
+    .capitais{
+        padding-left: 11%;
+        font-size: 180%;
+        margin-right: 0;
+        color: white;
+    }
+    .container-pesquisa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 75%;
+        margin: 25px auto;
+        background: #fff;
+        border: 5px;
+    }
+    .pesquisa input{
+        height: 55px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0 60px 0 20px;
+        font-size: 18px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.12);
+    } 
+    .texto{
+        color: white;
+        font-size: 4rem;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        position: center;
+        padding: 2rem 1rem;
+    }
+    .capitalE,.capitalD{
+        width: auto;
+        padding-left: 10%;
+        font-weight: bold;
+        word-spacing: 5px;
+    }
+
+    .container-pesquisa .pesquisa{
+        background: #fff;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    }
+    
+    .pesquisa.active input{
+        border-radius: 5px 5px 0 0;
+    }
+    .pesquisa .list{
+        padding: 0;
+        opacity: 0;
+        pointer-events: none;
+        max-height: 280px;
+        overflow-y: auto;
+    }
+    .pesquisa.active .list{
+        padding: 10px 8px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .list li{
+        list-style: none;
+        padding: 8px 12px;
+        display: none;
+        width: 100%;
+        cursor: default;
+        border-radius: 3px;
+    }
+    .pesquisa.active .list li{
+        display: block;
+    }
+    .list li:hover{
+        background: #efefef;
+    }
+    .pesquisa .icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        line-height: 55px;
+        font-size: 20px;
+        color: #644bff;
+        cursor: pointer;
+    }
+    
+    .container-minmax{
+        display: column;
+        width: auto;
+    }
+    .minmax{
+        width: auto;
+        font-size: 75%;
+        padding-left: 10%;
+        word-spacing: 10px;
+    }
+    .minmax2{
+        display: none;
+    } 
+}
+
+main{
+}
